@@ -1,0 +1,124 @@
+
+@media screen and (max-width: 1055px){
+    .comentarios{
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .caixa{
+        width: 90%;
+        max-width: 450px;
+        min-width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .area-quadros{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0;
+        transition: all 1s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #topo{
+        margin-bottom: 0;
+        transition: all 1s;
+    }
+    .sobre{
+        /* border: 1px solid red; */
+        text-align: center;
+        max-width: none;
+        transition: all 1s;
+    }
+    .artista{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+        margin: 0 50px !important;
+    }
+    .foto{
+        width: 80%;
+    }
+    .sobre{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto{
+        padding: 20px 30px;
+        transition: all 1s;
+    }
+
+    #area-icone-menu{
+        display: flex !important;
+        transition: 1s;
+    }
+
+    #area-artista{
+        margin-top: 0;
+        transition: 1s all;
+    }
+
+    .botao-compra{
+        display: none;
+    }
+
+    .btn-compra-2{
+        /* border: 1px solid red; */
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .btn-compra-2::before{
+        display: none;
+    }
+
+    .btn-compra-2 a::before{
+        content: url(../img/icones/carrinho_de_compras.webp);
+        padding-right: 10px;
+    }
+
+    #area-contato{
+        margin-top: 0;
+        transition: all 1s;
+    }
+
+    #removerOpere{
+        /* border: 1px solid red; */
+        display: flex;
+        width: max-content;
+        position: fixed !important;
+        left: 10px !important;
+        top: 95%;
+        z-index: 100;
+        transition: all 1s ease-in-out;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    
+
+    #audioPopup{
+        /* border: 1px solid red; */
+        width: 80%;
+        max-width: none;
+        transition: 1s all;
+    }
+
+    #footer{
+        margin-top: 0;
+    }
+}

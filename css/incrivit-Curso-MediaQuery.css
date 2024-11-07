@@ -1,0 +1,29 @@
+@media screen and (max-width: 900px) {
+    #area-contato{
+        /* border: 1px solid red; */
+        margin: 30px 30px !important;
+    }
+    .row{
+        width: 100%;
+    }
+    .nome, .email,
+    .telefone, .endereco,
+    .cidade, .provincia{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #area-contato{
+        margin: 50px 0 50px 0 !important;
+        width: 95%;
+        max-width: none;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .flex-column{
+        width: 100%;
+        max-width: none;
+    }
+}

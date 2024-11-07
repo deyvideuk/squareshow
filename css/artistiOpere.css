@@ -1,0 +1,348 @@
+
+/* Estilizacao de cores */
+:root{
+    --laranja: #ff7300;
+    --gray: #525252;
+    --branco: #ffffff;
+    --bg-danger: #DC3545;
+    --bg-warning: #FFC107;
+    --bg-info: #17A2B8;
+    --bg-success: #28A745;
+    --bg-artisti: #2B7C74;
+    --bg-maestri: #5A497B;
+}
+/* Estilizacao de cores */
+
+#conteudo{
+    /* border: 1px solid red; */
+    display: flex;
+    position: relative;
+    height: 0%;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.1s;
+}
+#removerOpere{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    max-width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+    padding: 5px;
+    cursor: pointer;
+}
+#removerOpere img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#area-artista{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 30px 0 30px;
+    /* padding: 10px; */
+    transition: 1s;
+}
+
+.artista{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    transition: all 1s;
+}
+
+.botao-compra{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.botao-compra::before{
+    position: absolute;
+    content: url(../img/icones/carrinho_de_compras.webp);
+    top: 13px;
+    left: 20px;
+}
+
+.botao-compra button{
+    background-color: var(--laranja);
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    border-radius: 45px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    transition: 1s all;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.botao-compra button:hover{
+    background-color: white;
+    color: var(--laranja);
+    border: 1px solid var(--laranja);
+    transition: 1s all;
+}
+
+.btn-compra-2{
+    /* border: 1px solid red; */
+    display: none;
+    justify-content: center;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.btn-compra-2 button{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.botao-compra:hover::before{
+    content: url(../img/icones/carrinho_de_compras-laranja.webp);
+}
+
+.sobre{
+    /* border: 1px solid blue; */
+    width: 100%;
+    max-width: 440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    margin: 30px 0;
+    transition: all 1s;
+}
+
+.sobre h1{
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+ .foto{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    max-width: 330px;
+    max-height: 360px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15%;
+    overflow: hidden;
+}
+ .foto img{
+    width: 100%;
+    min-width: 290px;
+    min-height: 290px;
+    object-fit: cover;
+}
+
+/* Estilizacao do sliders dos artistas */
+.conteudo{
+    overflow: visible !important;
+}
+
+
+.titulo h2{
+    font-size: 1.7em;
+    text-indent: 50px;
+    color: black;
+}
+
+
+
+/* Estilização da area saldi logout */
+.area-opere{
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    width: 100%;
+    max-width: 900px;
+    user-select: none;
+}
+
+.area-opere-vendita{
+    /* border: 1px solid red; */
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.area-saldi-logout{
+    /* border: 1px solid red; */
+    width: 100%;
+    max-width: 1800px !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 30px;
+    gap: 30px 10px;
+    margin: 0 50px;
+}
+
+.saldi-logout{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 30px;
+    gap: 30px 10px;
+}
+
+.obras{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    min-height: 500px;
+    max-width: 320px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px var(--silver);
+    align-items: center;
+}
+
+.obras .area-img{
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+}
+
+.obras .area-img img{
+    display: flex;
+    width: 100%;
+}
+/* Estilização da area saldi logout */
+
+
+
+
+/* Estilizacao da Biografia */
+.biografia{
+    /* border: 1px solid red; */
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 50px;
+}
+
+.texto{
+    /* border: 1px solid red; */
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px 50px;
+    text-align: justify;
+    color: var(--gray);
+    transition: all 1s;
+}
+.texto p{
+    text-indent: 0;
+    transition: all 1s;
+}
+/* Estilizacao da Biografia */
+
+/* Estilização de Comentarios */
+.area-comentarios{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 30px 0;
+}
+
+.comentarios{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    gap: 20px;
+    transition: all 1s;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    gap: 20px;
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 47.997px;
+    background: #E8E8E8;
+   
+    transition: all 1s;
+}
+.caixa h2{
+    position: relative;
+    color: #2E2E2E;
+    font-family: Inter;
+    font-size: 25.055px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.253px;
+    transition: 1s all;
+}
+
+.caixa h2::after{
+    content: url(../img/icones/verificado.webp);
+    position: relative;
+    left: 10px;
+    top: 10px;
+    transition: 1s all;
+}
+
+.caixa p{
+    /* border: 1px solid red; */
+    width: 100%;
+    min-height: 200px;
+    transition: all 1s;
+    text-align: center;
+    color: #2E2E2E;
+    font-family: Inter;
+    font-size: 17.332px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.253px;
+}
+/* Estilização de Comentarios */

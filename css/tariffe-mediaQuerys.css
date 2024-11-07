@@ -1,0 +1,44 @@
+
+@media screen and (max-width: 1000px){
+    .tariffe{
+        /* border: 1px solid red; */
+        grid-template-columns: max-content max-content;
+        transition: all 1s ease-in-out;
+    }
+
+    .area-planos{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .ouro{
+        border: none;
+    }
+}
+
+@media screen and  (max-width: 630px){
+    .titulo{
+        width: 60%;
+        font-size: 1.3em;
+        text-align: center;
+        transition: all 1s ease;
+    }
+    .tariffe{
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .box-tariffe{
+        width: 80%;
+        max-width: none;
+    }
+}
+
+@media screen and  (max-width: 450px){
+    .titulo{
+        font-size: 1.2em;
+    }
+    .tariffe{
+       margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+    --laranja: #ff7300;
+    --gray: #525252;
+    --gray-fraco: #C3C3C3;
+    --branco: #ffffff;
+    --bg-danger: #DC3545;
+    --bg-warning: #FFC107;
+    --bg-info: #17A2B8;
+    --bg-success: #28A745;
+    --bg-artisti: #2B7C74;
+    --bg-maestri: #5A497B;
+    --plano-premiunm: #DAA520;
+    --gold:#FFCA6D;
+    --silver: #A8A8A8;
+    --platinium: #B9C4D2;
+}
+
+/* Estilização de Tariffes */
+#area-tariffe{
+    /* border: 1px solid red; */
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
+    gap: 10%;
+}
+
+.titulo{
+    font-size: 1.5rem;
+}
+
+.tariffe{
+    /* border: 1px solid blue; */
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: max-content max-content max-content;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    gap: 50px;
+}
+
+.tariffe hr{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.box-tariffe{
+    position: relative;
+    border: 1px solid var(--gray-fraco);
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-tariffe div{
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+
+.nome-tariffe{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.preco-tariffe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.preco-tariffe div{
+    /* border: 1px solid red; */
+    width: 100%;
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.preco-tariffe .preco{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: 400;
+    position: relative;
+}
+
+.preco-tariffe .preco h3{
+    position: relative;
+}
+
+.preco-tariffe p{
+    font-weight: 400;
+}
+
+.box-tariffe sub{
+    font-size: 0.5em;
+    font-weight: 400;
+    position: absolute;
+    left: -15px;
+    bottom: 0;
+}
+
+.box-tariffe sup{
+    font-size: 0.5em;
+    font-weight: 400;
+    position: absolute;
+    right: -30px;
+    top: 0;
+}
+
+.validade-tariffe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 10px 0;
+}
+
+.botao{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.direitos-tariffe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 10px;
+}
+
+.direitos-tariffe .direitos{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    object-fit: contain;
+    gap: 5px;
+    align-items: start;
+}
+
+.direitos-tariffe .direitos img{
+    width: 100%;
+    max-width: 23px;
+    object-fit: contain;
+}
+.direitos-tariffe .direitos p{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.oferta{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* border: 1px solid red; */
+    width: 100%;
+    max-width: max-content;
+    object-fit: contain;
+}
+
+.oferta img{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Estilização de Tariffes */
+
+.pagamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.pagamento p{
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.pago p{
+    background-color: var(--bg-success);
+    color: var(--branco);
+}
+
+.nao-pago p{
+    background-color: var(--bg-danger);
+    color: var(--branco);
+}
+
+
+
+/* AREA ESTILIZAÇÃO PLANOS */
+
+.area-planos{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px;
+}
+
+.planos{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    max-width: 414px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.ouro{
+    border-left: 5px solid #DADADA;
+    border-right: 5px solid #DADADA;
+}
+
+.conteudo{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 310px;
+    max-height: 417px;
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 50px !important;
+    box-shadow: 0px 0px 15px var(--silver);
+    transition: all 1s;
+}
+
+.conteudo:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+.tempo{
+    font-size: 22px;
+    color: var(--gray);
+    font-weight: 600;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.desconto{
+    /* border: 1px solid red; */
+    padding: 5px;
+    position: relative;
+}
+
+.desconto::after{
+    background-color: red;
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+
+.valor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.valor h2{
+    font-size: 3.2rem;
+}
+
+.valor p{
+    /* border: 1px solid red; */
+    text-wrap: wrap;
+    max-width: 90%;
+    text-align: left;
+}
+
+.qtd-obras{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: max-content;
+    padding: 0 35px;
+    gap: 10px;
+}
+
+.botao button{
+    background-color: var(--gray-fraco) !important;
+    border: 1px solid var(--gray-fraco) !important;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+
+
+.tempo-silver{
+    background-color: var(--gray-fraco);
+}
+.color-silver{
+    color: var(--silver);
+}
+
+.tempo-gold{
+    background-color: var(--gold);
+}
+.color-gold{
+    color: var(--gold);
+}
+
+.tempo-platinium{
+    background-color: var(--platinium);
+}
+.color-platinium{
+    color: var(--platinium);
+}
+
+.bg-silver button{
+    background-color: var(--silver) !important;
+    border: 1px solid var(--silver) !important;
+}
+
+.bg-gold button{
+    background-color: var(--gold) !important;
+    border: 1px solid var(--gold) !important;
+}
+
+.bg-platinium button{
+    background-color: var(--platinium) !important;
+    border: 1px solid var(--platinium) !important;
+}
+
+
+/* AREA ESTILIZAÇÃO PLANOS */

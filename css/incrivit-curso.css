@@ -1,0 +1,160 @@
+
+
+#area-contato{
+    /* border: 1px solid red; */
+    width: 100%;
+    max-width: 900px;
+    margin: 80px 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.371);
+}
+
+.formulario input{
+    /* border: 1px solid red; */
+    position: relative;
+    font-size: 15px;
+    padding: 0 5px;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 40px;
+    /* width: 100% !important; */
+    /* border-bottom: 1px solid white; */
+}
+.formulario input:focus{
+    outline: 3px solid white;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.formulario .nome, .formulario .email{
+    display: flex;
+    width: 100%;
+}
+
+.row{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+.flex-column{
+    width: 50%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-column input{
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+}
+
+.capzip{
+    max-width: 233.33px;
+}
+
+.categoria{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    transition: all 1s;
+}
+
+.categoria select{
+    outline: none;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid white;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.checkbox{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.checkbox input{
+   position: relative;
+   cursor: pointer;
+   width: 25px;
+   height: 20px;
+   box-shadow: 2px 2px 2px black;
+}
+
+.checkbox input::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    width:20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.checkbox input:checked:after{
+    content: "";
+    display: flex;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 3px;
+    left: 7px;
+}
+
+.checkbox span{
+    margin: 0px 15px;
+    cursor: default;
+}
+
+
+.arquivos{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 1s;
+}
+.arquivos input[type="file"]{
+    /* border: 1px solid red; */
+    width: max-content;
+    display: flex;
+}
+
+#preview{
+    border: 2px dotted white;
+    display: none;
+    position: relative;
+    width: max-content;
+    max-width: 500px;
+    max-height: 500px;
+    flex-wrap: wrap;
+    height: 200px;
+    overflow-y: scroll;
+}
+#preview .picture{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

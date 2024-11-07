@@ -1,0 +1,683 @@
+@media screen and (max-width: 1050px){
+    .next{
+        right: 0;
+        transition: 1s;
+    }
+    .prev{
+        left: 0;
+        transition: 1s;
+    }
+    .next2{
+        right: 0;
+        transition: 1s;
+    }
+    .prev2{
+        left: 0;
+        transition: 1s;
+    }
+
+}
+
+@media screen and (max-width: 930px){
+
+    .carrossel{
+        margin: 0 0;
+    }
+    .carrossel2{
+        margin: 0 0;
+    }
+
+    .area-estatua{
+        display: none;
+    }
+
+    #iscriviti{
+        /* border: 1px solid red; */
+        width: 100%;
+        padding-top: 40px !important;
+        left: 0;
+    }
+
+    #wallpaper{
+        background-position: center;
+        transition: 1s;
+    }
+
+    .formulario{
+        width: 100%;
+        max-width: none;
+        min-width: none;
+    }
+    .area-formulario{
+        padding: 0 30px;
+        margin-bottom: 50px;
+        transition: 1s;
+    }
+    
+    .ladoalado{
+        flex-direction: column;
+        transition: 1s;
+        width: 100%;
+        max-width: none !important;
+        gap: 40px;
+    }
+
+    .nome, .email, .oggetto{
+        width: 100%;
+        max-width: none !important;
+    }
+
+    .nome>input, .email>input, .oggetto>input{
+        width: 100%;
+        max-width: none !important;
+    }
+
+    .area-footer{
+        /* border: 1px solid red; */
+        padding: 0 30px;
+        margin-bottom: 10px;
+        transition: 1s;
+    }
+
+    .opt1{
+        grid-area: um;
+    }
+    .opt2{
+        grid-area: dois;
+    }
+    .opt3{
+        grid-area: tres;
+    }
+    .opt4{
+        grid-area: quatro;
+    }
+    .opt5{
+        grid-area: cinco;
+    }
+    .opt6{
+        grid-area: seis;
+    }
+    .opt7{
+        grid-area: sete;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .area-opt{
+        /* border: 1px solid white; */
+        grid-template-areas:
+        "um dois"
+        "tres quatro"
+        "cinco seis"
+        "sete sete"
+        ;
+        gap: 30px;
+        padding: 5px 0;
+    }
+
+    
+}
+
+
+@media screen and (max-width:800px){
+    .box-eventos{
+        flex-direction: column;
+        max-width: 500px;
+        gap: 30px;
+        padding-bottom: 30px;
+        transition: all 1s ease-in-out;
+    }
+
+    .capa-eventos{
+        position: relative;
+        max-width: none;
+        max-height: 249px;
+        align-items: center;
+    }
+
+    .capa-eventos::after{
+        background-color: var(--laranja);
+        content: "";
+        width: 200%;
+        height: 100%;
+        position: absolute;
+        transform: rotate(-35deg);
+        left: 0%;
+        bottom: -70%;
+        opacity: 0.8;
+    }
+
+    .capa-eventos img{
+        width: 100%;
+    }
+
+    .divisao-eventos{
+        gap: 30px;
+        padding:5px;
+    }
+
+    .titulo-eventos{
+        /* border: 1px solid red; */
+        display: flex;
+        line-height: 1.5em;
+        margin: 20px 0;
+    }
+
+
+    #contatti .sub-titulo #icone-telefone{
+        grid-area: icone-telefone;
+    }
+    #contatti .sub-titulo #numero-telefone{
+        grid-area: telefone;
+    }
+    #contatti .sub-titulo #divisor{
+        grid-area: divisor;
+    }
+    #contatti .sub-titulo #icone-email{
+        grid-area: icone-email;
+    }
+    #contatti .sub-titulo #email-sub-titulo{
+        grid-area: email;
+    }
+
+    #contatti .sub-titulo{
+        /* border: 1px solid white; */
+        width: max-content;
+        display: grid;
+        grid-template-areas:
+            "icone-telefone telefone"
+            "divisor divisor"
+            "icone-email email"
+        ;
+    }
+
+    .sub-titulo{
+        font-size: 5vw;
+    }
+
+    #area-quem-somos{
+        /* border: 1px solid red; */
+        padding: 30px;
+    
+    }
+
+    
+}
+
+
+@media screen and (max-width:712px) {
+    .descricao .row{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #iscriviti{
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+    }   
+    #area-formazione{
+        margin-top: 10px;
+    }
+    #iscriviti{
+        padding: 40px 0;
+    }
+    #eventi{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 905px) {
+    #area-icone-menu{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    #topo{
+        /* border: 1px solid red; */
+        padding-bottom: 0;
+        transition: 1s;
+    }
+    
+    #logo{
+        /* border: 1px solid red; */
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo img{
+        width: 100%;
+    }
+
+    #area-logo-menu{
+        /* border: 1px solid red; */
+        display: flex;
+        width: 50%;
+        margin: 40px auto 0 auto;
+        transition: 1s;
+    }
+
+    #area-icone-menu{
+        /* border: 1px solid red; */
+        width: max-content !important;
+        position: fixed;
+        display: flex;
+        top: 10px;
+        left: 10px;
+        transition: 1s;
+        z-index: 3 !important;
+        filter: drop-shadow(3px 3px 7px black);
+    }
+
+    #area-close-menu{
+        /* border: 1px solid red; */
+        display: flex;
+        position: absolute;
+        z-index: 10;
+        top: 20px;
+        right: 20px;
+        transition: 1s;
+    }
+
+    #nav{
+        /* border: 1px solid red; */
+        position: relative;
+        left: -900px;
+        transition: none;
+    }
+
+    #area-login-pai{
+        /* border: 1px solid red; */
+        position: absolute;
+        width: 100%;
+        top: 20px;
+        left: 0;
+        padding: 0 !important;
+        margin: 0;
+    }
+    .area-btn-login{
+        position: relative;
+        left: 10px;
+        max-width: 34px;
+    }
+
+    #area-login{
+        position: relative !important;
+        /* border: 1px solid red; */
+        padding: 50px 0;
+        top: 80px;
+        left: 0px !important;
+        width: 100% !important;
+        max-width: none;
+        border-radius: 0;
+        box-shadow: none;
+        /* display: none; */
+    }
+
+    #form-login{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+        font-size: 1.3em;
+    }
+
+    .area-input-login{
+        width: 90%;
+        gap: 25px;
+    }
+
+    #submit-login{
+        width: 80%;
+        height: 35px !important;
+    }
+    
+    .area-input-login input{
+        height: 40px;
+        width: 90%;
+        max-width: none;
+    }
+
+
+    .area-usuario{
+        /* border: 1px solid red; */
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .apresentacao .amostra{
+        /* border: 1px solid red; */
+        font-size: 1.3em;
+    }
+    .apresentacao .sub-amostra{
+        /* border: 1px solid red; */
+        font-size: 1.3em;
+    }
+
+    .formazione .titulo{
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .follow{
+        width: 100%;
+        color: var(--gray);
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 30px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    #menu{
+        /* border: 1px solid red; */
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: 1s;
+    }
+
+    #menu ul{
+        position: relative;
+        width: 90%;
+        height: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        gap: 30px;
+        overflow: scroll;
+        transition: 1s;
+        background-color: white;
+        /* display: none; */
+    }
+    #menu ul li{
+        padding-left: 20px;
+        transition: 1s;
+    }
+
+
+
+    #contatti .titulo{
+        /* border: 1px solid red; */
+        font-size: 2.4em;
+    }
+
+    .area-formulario{
+        padding-bottom: 50px;
+        margin-bottom: 0 auto 30px auto; 
+        transition: all 1s ease-in-out;
+    }
+
+    .checkbox{
+        gap: 15px;
+        transition: all 1s ease-in-out;
+    }
+
+    .checkbox span{
+        margin: 0;
+        cursor: default;
+        transition: all 1s ease-in-out;
+    }
+
+    .area-iscriviti{
+        bottom: 10px;
+        transition: all 1s ease-in-out;
+    }
+
+    .descricao .area-local{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .area-local .data{
+        width: 99%;
+        justify-content: left;
+        text-align: right;
+    }
+
+    .data #countdown{
+        display: flex;
+        justify-content: end;
+    }
+
+    #area-contato{
+        width: 90%;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .texto{
+        padding: 20px;
+    }
+    .sobre{
+        padding: 0 20px;
+    }
+
+    .area-opt{
+        /* border: 1px solid white; */
+        grid-template-areas:
+        "um" 
+        "dois"
+        "tres" 
+        "quatro"
+        "cinco" 
+        "seis"
+        "sete"
+        ;
+        gap: 30px;
+        padding: 5px 0;
+    }
+
+
+     
+    .nome,.email,.oggetto{
+        width: 100%;
+        max-width: none !important;
+    }
+    .nome>input, .email>input, .oggetto>input{
+        width: 100%;
+        max-width: none !important;
+    }
+
+     #footer{
+        margin-top: 0;
+        transition: 1s all;
+     }
+     
+     .next{
+        right: 0;
+        transition: 1s;
+        width: 13%;
+        transition: all 1s;
+    }
+    .prev{
+        left: 0;
+        transition: 1s;
+        width: 13%;
+        transition: all 1s;
+    }
+    .next2{
+        right: 0;
+        transition: 1s;
+        width: 13%;
+        transition: all 1s;
+    }
+    .prev2{
+        left: 0;
+        transition: 1s;
+        width: 13%;
+        transition: all 1s;
+    }
+
+    .icone-exclusivo{
+        /* border: 1px solid red; */
+        display: flex;
+        width: 100%;
+        max-width: 64px;
+        position: absolute;
+        top: -12px;
+        right: -28px;
+        transform: rotate(40deg);
+        transition: all 1s ;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .categorias{
+        /* border: 1px solid blue; */
+        gap: 50px;
+        transition: 1s all;
+     }
+
+     /* Estilização do new banner */
+    #new-banner{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100vh;
+        margin: 0 0 100px 0;
+    }
+    .area-new-banner{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/Background/salvatore-site-banner-bem-vindo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+/* Estilização do new banner */
+}
+
+@media screen and (max-width: 436px){
+    
+    #iscriviti{
+        padding-top: 0;
+    }
+    #eventi{
+        gap: 0 !important;
+        margin-bottom: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    .area-carrossel{
+        position: relative;
+        margin: 0 !important;
+        transition: all 1s ease-in-out;
+    }
+
+    .m-a{
+        /* border: 1px solid red; */
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+        width: 100%;
+        max-width: 70px;
+        height: max-content;
+        z-index: 2;
+        transition: all 1s ease-in-out;
+    }
+    .m-a img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .checkbox input{
+        position: relative;
+        cursor: pointer;
+        width: 45px;
+        height: 20px;
+        box-shadow: 2px 2px 2px black;
+        transition: 1s all;
+     }
+     .formazione{
+        padding: 0;
+     }
+    .formazione .titulo{
+        font-size: 1.6em;
+        padding-bottom: 20px;
+        transition: all 1s;
+    }
+    .formazione .sub-titulo{
+        width: 100%;
+        min-width: none;
+        text-align: justify;
+    }
+    .area-video{
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px !important;
+    }
+
+    
+
+    .ingresso{
+        /* border: 1px solid red; */
+        width: 80%;
+        justify-content: center;
+        gap: 0px;
+    }
+    .ingresso .texto{
+        font-size: 0.7em;
+    }
+    .ingresso .icone{
+        margin: 0;
+    }
+    .area-local{
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .local{
+        width: 100%;
+        max-width: min-content;
+        font-size: 0.7em;
+        display: flex;
+        gap: 0;
+    }
+    .local .endereco{
+        width: max-content;
+        max-width: 200px;
+        line-height: normal;
+    }
+    .data{
+        display: flex;
+        font-size: 0.8em;
+    }
+
+    .checkbox input{
+        position: relative;
+        cursor: pointer;
+        width: 55px;
+        max-width: none;
+        height: 20px;
+        box-shadow: 2px 2px 2px black;
+        transition: 1s all;
+     }
+
+     .titulo{
+        font-size: 1.4em;
+     }
+
+    
+}
+
+
+

@@ -1,0 +1,35 @@
+
+https://squareshow.net?session_content={utm_content} Identifica qual conteúdo seu cliente escolhe. Use este parâmetro para distinguir entre links que apontam para a mesma página de pagamento.
+
+------------------------------------------------------------------------------------------------;
+
+Plano Silver:
+
+https://squareshow.net/?plano=Silver1&session_id={CHECKOUT_SESSION_ID}
+https://squareshow.net/?plano=Silver2&session_id={CHECKOUT_SESSION_ID}
+https://squareshow.net/?plano=Silver3&session_id={CHECKOUT_SESSION_ID}
+------------------------------------------------------------------------------------------------;
+
+Plano Gold:
+
+https://squareshow.net/?plano=Gold1&session_id={CHECKOUT_SESSION_ID}
+https://squareshow.net/?plano=Gold2&session_id={CHECKOUT_SESSION_ID}
+https://squareshow.net/?plano=Gold3&session_id={CHECKOUT_SESSION_ID}
+
+------------------------------------------------------------------------------------------------;
+
+Plano Platinium:
+
+https://squareshow.net/?plano=Platinium1&session_id={CHECKOUT_SESSION_ID}
+https://squareshow.net/?plano=Platinium2&session_id={CHECKOUT_SESSION_ID}
+https://squareshow.net/?plano=Platinium3&session_id={CHECKOUT_SESSION_ID}
+
+------------------------------------------------------------------------------------------------;
+
+Alunno:
+https://squareshow.net/?plano=Formazione&session_id={CHECKOUT_SESSION_ID}
+
+------------------------------------------------------------------------------------------------;
+
+Compras:
+https://squareshow.net/?vendedor=Ariel_Puljol&produto=Mujer_de_mil_batallas&session_id={CHECKOUT_SESSION_ID}

@@ -1,0 +1,9 @@
+
+
+@media screen and (max-width: 600px) {
+    #area-regras{
+        /* border: 1px solid red; */
+        margin: 10px 20px;
+        transition: all 1s;
+    }
+}
